@@ -28,6 +28,10 @@ code {
   flex-direction: column;
 }
 
+li{
+  list-style: none;
+}
+
 .view{
   position: absolute;
   bottom: 0;
