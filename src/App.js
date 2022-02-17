@@ -1,16 +1,20 @@
 import './App.css';
 import React from 'react';
 import MovieCard from './Component/MovieCard';
-
-
-//const MOVIE_API = "https://api.themoviedb.org/3/movie/550?api_key=558606ca97dbde30e8e5659c6f31c85a";
-//const IMG_API = "https://image.tmdb.org/t/p/w1280";
+import {  Route, Routes, BrowserRouter } from 'react-router-dom';
+import Detail from './Component/Detail';
 
 function App() {
   return (
-    <div>
-      <MovieCard/>
-    </div>
+    <> 
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<MovieCard/>}></Route>
+          <Route path='/detail/:movieId' element={<Detail/>}></Route>
+        </Routes>
+      </BrowserRouter>
+      
+    </>
   );
 }
 

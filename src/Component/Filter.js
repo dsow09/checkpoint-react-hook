@@ -4,7 +4,7 @@ import MovieList from './MovieList';
 
 const Filter = () => {
     const [searchTerm, setSearchTerm] = useState("");
-    
+
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -31,12 +31,13 @@ const Filter = () => {
                             return val;
                         }
                     }).map((movie) => (
-                        <li key={movie.title}>
+                        <li key={movie.id}>
                             <MovieList
                                     title = {movie.title} 
                                     description = {movie.description} 
                                     posterURL = {movie.posterURL}
-                                    rating = {movie.rating} />
+                                    rating = {movie.rating}
+                                    id =  {movie.id} />
                         </li>
                     ))
                 }

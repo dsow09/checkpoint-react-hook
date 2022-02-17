@@ -6,10 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.css"
 import 'react-simple-star-rating';
 
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <App />
+</React.StrictMode>,
   document.getElementById('root')
 );
 

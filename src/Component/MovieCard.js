@@ -11,10 +11,12 @@ const MovieCard = () => {
 
     const handleSubmit = event => {
         setMovie(movies.push({
-          title: title,
-          description: description,
-          posterURL: posterURL,
-          rating: rating
+            id: movies.length+1,
+            title: title,
+            description: description,
+            posterURL: posterURL,
+            rating: rating,
+            src: "https://www.youtube.com/embed/fF6Bc75HVBI"
         }))
   
         console.log(movie);
